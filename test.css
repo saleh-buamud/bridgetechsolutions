@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.navbar-nav .nav-link.active {
+    border-bottom: 2px solid white;
+    /* الخط السفلي للرابط النشط */
+}
+
+/* تعيين لون الخلفية للروابط عند التمرير عليها */
+.navbar-nav .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    /* تغيير الخلفية عند التمرير */
+}
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    /* Make the container stack elements vertically */
+    align-items: center;
+    /* Center the content horizontally */
+}
+
+.row ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.footer .nav-link.active {
+    border-bottom: 2px solid white;
+    /* الخط السفلي للرابط النشط */
+}
+
+/* تعيين لون الخلفية للروابط عند التمرير عليها */
+.footer .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    /* تغيير الخلفية عند التمرير */
+}

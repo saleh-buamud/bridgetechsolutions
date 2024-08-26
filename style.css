@@ -1,0 +1,94 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    color: white;
+    background-color: rgb(25, 78, 161, 0.9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin-right: 20px;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s, border-bottom 0.3s;
+    position: relative;
+    padding-bottom: 10px;
+    /* مسافة بين النص والخط السفلي */
+}
+
+ul li a.active {
+    border-bottom: 2px solid white;
+}
+
+.con {
+    background-image: url(/image.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 55vh;
+    display: grid;
+    place-items: center;
+    padding: 0 20px;
+}
+
+.h3-p {
+    max-width: 500px;
+    text-align: left;
+    color: #000000;
+    margin-left: 10%;
+    /* ميل العنصر قليلاً إلى اليسار */
+    /* قد تحتاج إلى تعديل هذه القيمة حسب الحاجة */
+}
+
+.h3-p h3 {
+    margin-bottom: 10px;
+}
+
+/* Media Query لتعديل المسافة على الشاشات الأصغر */
+@media (max-width: 768px) {
+    .con {
+        display: flex;
+       justify-content: space-around;
+       color: red;
+        /* تقليل الميل على الشاشات الأصغر */
+    }
+}
+
+/* Media Query لتعديل المسافة على الشاشات الأصغر */
+@media (min-width: 480px) {
+    .h3-p {
+        margin-left: 0;
+        /* إلغاء الميل على الشاشات الأصغر جدًا */
+        text-align: center;
+        /* محاذاة النص في وسط العنصر */
+    }
+}
+.h3-p p {
+    margin: 0;
+    /* إزالة الهوامش الافتراضية من الفقرة */
+}

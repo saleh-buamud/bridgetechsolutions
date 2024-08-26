@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="test.css">
+<style>
+    .navbar .container .navbar-brand img {
+        height: 57px;
+        width: 170px;
+    }
+    .services-section {
+        padding: 40px 20px;
+        text-align: left;
+    }
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+    .services-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 50vh;
+        /* Adjust this value as needed */
+    }
+
+    .services-content {
+        max-width: 800px;
+        /* Adjust this value to control content width */
+    }
+     .card {
+            border: none; /* إزالة الحافة */
+            box-shadow: none; /* إزالة الظلال */
+        }
+
+        .card-img-top {
+            width: 300px;
+            border: 1px;
+            border-radius: 0;
+            height: 300px; /* تحديد ارتفاع ثابت للصور */
+            object-fit: cover; /* ملء الصورة دون تغيير أبعادها */
+        }
+
+         .card {
+            border: none; /* إزالة الحافة */
+            box-shadow: none; /* إزالة الظلال */
+            background-color: transparent; /* إزالة الخلفية البيضاء */
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .card-img-top {
+            width: 100%; /* العرض الكامل */
+            height: auto; /* تغيير الارتفاع ليكون تلقائي */
+            object-fit: cover; /* ملء الصورة دون تشويه */
+        }
+
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+           
+            flex: 1; /* يضمن أن البطاقة تمتد لتناسب المحتوى */
+        }
+
+        .card-text {
+            margin-bottom: 1rem; /* إضافة مسافة أسفل النص */
+        }
+       
+    
+.container {
+    padding: 0 15px;
+}
+
+.h3-p {
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    .h3-p h3 {
+        font-size: 1.5rem;
+    }
+
+    .h3-p p {
+        font-size: 0.875rem;
+    }
+}
+.h3-p {
+    padding: 20px;
+    margin: 0 auto;
+}
+@media (max-width: 576px) {
+    .h3-p h3 {
+        font-size: 1.25rem;
+    }
+
+    .h3-p p {
+        font-size: 0.75rem;
+        line-height: 1.5;
+    }
+}
+.custom-background {
+  
+    background-size: cover; /* لضبط الصورة لتغطية الخلفية بشكل كامل */
+    padding: 40px 0; /* إضافة تباعد من الأعلى والأسفل */
+}
+
+.services-section {
+    padding: 40px 0; /* تباعد داخلي */
+    border-radius: 10px; /* زوايا دائرية للقسم */
+}
+
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg" style="background-color: rgba(25, 78, 161, 0.9);">
+    <div class="container">
+        <a class="navbar-brand" href="#"><img src="logo.jpg" alt="Logo" class="img-fluid"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link p-2 m-1 active" style="color: white;" href="#">Link 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link p-2 m-1" href="Who We Are.html" style="color: white;">Who We Are</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link p-2 m-1" href="news.html" style="color: white;">Link 3</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link p-2 m-1" href="contactUs.html" style="color: white;">Active Link</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <div class="container-fluid"
+        style="background-image: url('/image.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 55vh; display: grid; place-items: center; padding: 0 20px;">
+        <div class="con d-flex align-items-center w-100">
+            <div class="container" style="margin-left: 40px;">
+            <div class="container d-flex justify-content-end">
+                <div class="row justify-content-end">
+                    <div class="col-lg-8 col-md-10 col-sm-12 d-flex  justify-content-end">
+                        <div class="h3-p  justify-content-end">
+                            <h3 class="mb-2">Empower Your Business for Life!</h3>
+                            <p class="mb-0">
+                                Our company provides innovative solutions with a focus on delivering exceptional
+                                <br> customer service and support. BridgeTechSolutions has established its reputation by <br>
+                                providing state-of-the-art security solutions coupled with traditional <br> customer service.
+                                Our approach involves integrating practical corporate experience with up-to-date product
+                                training. Consequently, <br> our clientele receives customized solutions that are tailored
+                                to their specific needs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- New section for the services paragraph and cards -->
+<div>
+    <div class="services-section container my-5">
+        <div class="p-4" >
+            <h2 class="d-flex justify-content-start">Our Services to You</h2>
+            <p class="d-flex justify-content-start">At our IT consulting firm, we offer a range of services to meet your
+                business needs. Our team of experienced
+                consultants are dedicated to providing top-notch solutions that will help your company thrive in today's
+                competitive market. We offer services such as IT strategy development, project management, software
+                development, and IT support. Our goal is to help you achieve your business goals by leveraging
+                technology to
+                improve efficiency and productivity. Whether you're a small startup or a large corporation, we have the
+                expertise to help you succeed. Contact us today to learn more about how we can help your business grow.
+            </p>
+        </div>
+        <!-- Cards Section -->
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-lg-4 mb-4 d-flex align-items-stretch">
+                    <div class="card">
+                        <img src="/image (1).jpg" class="card-img-top" alt="Dōtonbori Canal">
+                        <div class="card-body">
+                            <h5 class="card-title">Dōtonbori Canal</h5>
+                            <p class="card-text">IT consultancy project management is our specialty. Our skilled
+                                professionals guide, support, and manage projects to
+                                help organizations succeed. We can help with IT consulting, project planning, risk
+                                management, budgeting, and more. We
+                                provide high-quality services tailored to each client's needs and excellent customer
+                                service. Contact us today to
+                                understand how we can help your organization succeed in the competitive IT consulting
+                                industry.ogy. We're with you from vision to value.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4 d-flex align-items-stretch">
+                    <div class="card">
+                        <img src="/image (2).jpg" class="card-img-top" alt="Porto Timoni Double Beach">
+                        <div class="card-body">
+                            <h5 class="card-title">Porto Timoni Double Beach</h5>
+                            <p class="card-text">Technology evolves. Open architecture and cutting-edge technologies let
+                                us protect our clients from outdated systems. We
+                                use cutting-edge technology instead of experimental technologies to ensure you get the
+                                best solution at a price you can
+                                afford.
+                                Our IP-based technologies let IT departments monitor systems and servers for maximum
+                                uptime. This allows software and
+                                firmware updates and remote administration. Long-term time and expense savings results.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4 d-flex align-items-stretch">
+                    <div class="card">
+                        <img src="/image-768x576 (1).png" class="card-img-top" alt="Tritons Fountain">
+                        <div class="card-body">
+                            <h5 class="card-title">Tritons Fountain</h5>
+                            <p class="card-text">Our selection of products has been meticulously curated for their
+                                efficacy and user-friendliness. Our solutions may
+                                appear deceptively simple.
+
+                                We acknowledge that your personnel possess diverse skill sets, and we strive to create
+                                solutions that accommodate these
+                                strengths. Our aim is to deliver dependable and efficient functionality to facilitate
+                                successful task completion.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-lg-4 mb-4 d-flex align-items-stretch">
+                    <div class="card">
+                        <img src="/image (1).jpg" class="card-img-top" alt="Dōtonbori Canal">
+                        <div class="card-body">
+                            <h5 class="card-title">Dōtonbori Canal</h5>
+                            <p class="card-text">IT consultancy project management is our specialty. Our skilled
+                                professionals guide, support, and manage projects to
+                                help organizations succeed. We can help with IT consulting, project planning, risk
+                                management, budgeting, and more. We
+                                provide high-quality services tailored to each client's needs and excellent customer
+                                service. Contact us today to
+                                understand how we can help your organization succeed in the competitive IT consulting
+                                industry.ogy. We're with you from vision to value.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4 d-flex align-items-stretch">
+                    <div class="card">
+                        <img src="/image (2).jpg" class="card-img-top" alt="Porto Timoni Double Beach">
+                        <div class="card-body">
+                            <h5 class="card-title">Porto Timoni Double Beach</h5>
+                            <p class="card-text">Technology evolves. Open architecture and cutting-edge technologies let
+                                us protect our clients from outdated systems. We
+                                use cutting-edge technology instead of experimental technologies to ensure you get the
+                                best solution at a price you can
+                                afford.
+                                Our IP-based technologies let IT departments monitor systems and servers for maximum
+                                uptime. This allows software and
+                                firmware updates and remote administration. Long-term time and expense savings results.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4 d-flex align-items-stretch">
+                    <div class="card">
+                        <img src="/image-768x576 (1).png" class="card-img-top" alt="Tritons Fountain">
+                        <div class="card-body">
+                            <h5 class="card-title">Tritons Fountain</h5>
+                            <p class="card-text">Our selection of products has been meticulously curated for their
+                                efficacy and user-friendliness. Our solutions may
+                                appear deceptively simple.
+        
+                                We acknowledge that your personnel possess diverse skill sets, and we strive to create
+                                solutions that accommodate these
+                                strengths. Our aim is to deliver dependable and efficient functionality to facilitate
+                                successful task completion.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <footer class="footer" style="background-color: rgba(25, 78, 161, 0.9);">
+    <div>LOGO</div>
+    <div class="container">
+    <div class="container">
+        <div class="row">
+                <ul >
+                <li >
+                    <a class="nav-link p-2 m-1 active" style="color: white;" href="#">Link 1</a>
+                </li>
+                <li >
+                    <a class="nav-link p-2  m-1" href="#" style="color: rgb(255, 255, 255);">Link 2</a>
+                </li>
+                <li >
+                    <a class="nav-link p-2  m-1" href="#" style="color: rgb(255, 255, 255);">Link 3</a>
+                </li>
+                <li >
+                    <a class="nav-link p-2  m-1" href="#" style="color: rgb(255, 255, 255);">Active Link</a>
+                </li>
+            </ul>
+       
+        </div>
+    </div>
+    </div>
+    <div>copyright </div> 
+    </footer>
+<!-- End of .container -->
+    <!-- </div> -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="test.js"></script>
+</body>
+
+</html>
