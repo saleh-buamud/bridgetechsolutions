@@ -3,22 +3,24 @@
     margin: 0;
     box-sizing: border-box;
 }
+.navbar{
+    height: 130px;
+}
+.navbar .container .navbar-brand .img-fluid {
+    height: 90px;
+    width: 200px;
+}
 .navbar-nav .nav-link.active {
     border-bottom: 2px solid white;
-    /* الخط السفلي للرابط النشط */
 }
 
-/* تعيين لون الخلفية للروابط عند التمرير عليها */
 .navbar-nav .nav-link:hover {
     background-color: rgba(255, 255, 255, 0.2);
-    /* تغيير الخلفية عند التمرير */
 }
 .footer .container {
     display: flex;
     flex-direction: column;
-    /* Make the container stack elements vertically */
     align-items: center;
-    /* Center the content horizontally */
 }
 
 .row ul {
@@ -29,11 +31,191 @@
 }
 .footer .nav-link.active {
     border-bottom: 2px solid white;
-    /* الخط السفلي للرابط النشط */
 }
 
-/* تعيين لون الخلفية للروابط عند التمرير عليها */
 .footer .nav-link:hover {
     background-color: rgba(255, 255, 255, 0.2);
-    /* تغيير الخلفية عند التمرير */
 }
+        .navbar .container .navbar-brand img {
+            height: 57px;
+            width: 170px;
+        }
+    
+        .services-section {
+            padding: 40px 20px;
+            text-align: left;
+        }
+    
+        .footer {
+            background-color: #f1f1f1;
+            padding: 10px;
+            width: 100%;
+            text-align: center;
+        }
+    
+        .services-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 50vh;
+        }
+    
+        .services-content {
+            max-width: 800px;
+        }
+    
+        .card {
+            border: none;          box-shadow: none;
+        }
+    
+        .card-img-top {
+            width: 300px;
+            border: 1px;
+            border-radius: 0;
+            height: 300px;
+            object-fit: cover;
+        }
+    
+        .card {
+            border: none;
+            box-shadow: none;
+            background-color: transparent;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+    
+        .card-img-top {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            flex: 1;
+        }
+    
+        .card-text {
+            margin-bottom: 1rem;
+        }
+    
+    
+        .container {
+            padding: 0 15px;
+        }
+    
+        .h3-p {
+            flex: 1;
+        }
+    
+        @media (max-width: 768px) {
+            .h3-p h3 {
+                font-size: 1.5rem;
+            }
+    
+            .h3-p p {
+                font-size: 0.875rem;
+            }
+        }
+    
+        .h3-p {
+            padding: 20px;
+            margin: 0 auto;
+        }
+    
+        @media (max-width: 576px) {
+            .h3-p h3 {
+                font-size: 1.25rem;
+            }
+    
+            .h3-p p {
+                font-size: 0.75rem;
+                line-height: 1.5;
+            }
+        }
+    
+        .custom-background {    
+            background-size: cover;
+            padding: 40px 0;
+        }
+    
+        .services-section {
+            padding: 40px 0;
+            border-radius: 10px;
+        }
+                .footer {
+                    background-color: #f1f1f1;
+                    padding: 10px;
+                    width: 100%;
+                    text-align: center;
+                }
+        
+                .custom-img {
+                    width: 100%;
+                    height: 150px;
+                    opacity: 0.9;
+                    object-fit: cover;
+                    background-image: linear-gradient(rgba(56, 56, 56, 0.79), rgba(56, 56, 56, 0.79)), url('/image\ \(4\).jpg');
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: 45% 87%;
+                    background-attachment: scroll;
+                }
+        
+                .card-body {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 1rem;
+                    flex: 1;
+                }
+        
+                .card-text {
+                    margin-bottom: 1rem;
+                }
+        
+                .container {
+                    padding: 0 15px;
+                }
+        
+                .h3-p {
+                    flex: 1;
+                }
+        
+                @media (max-width: 768px) {
+                    .h3-p h3 {
+                        font-size: 1.5rem;
+                    }
+        
+                    .h3-p p {
+                        font-size: 0.875rem;
+                    }
+                }
+        
+                .h3-p {
+                    padding: 20px;
+                    margin: 0 auto;
+                }
+        
+                @media (max-width: 576px) {
+                    .h3-p h3 {
+                        font-size: 1.25rem;
+                    }
+        
+                    .h3-p p {
+                        font-size: 0.75rem;
+                        line-height: 1.5;
+                    }
+                }
+        
+                .custom-background {
+                    background-size: cover;
+                    padding: 40px 0;
+                }
+        
+                .services-section {
+                    padding: 40px 0;
+                    border-radius: 10px;
+                }
