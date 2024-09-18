@@ -158,7 +158,7 @@
                     height: 150px;
                     opacity: 0.9;
                     object-fit: cover;
-                    background-image: linear-gradient(rgba(56, 56, 56, 0.79), rgba(56, 56, 56, 0.79)), url('/image\ \(4\).jpg');
+                    background-image: linear-gradient(rgba(56, 56, 56, 0.79), rgba(56, 56, 56, 0.79)), url('img/image\ \(4\).jpg');
                     background-size: cover;
                     background-repeat: no-repeat;
                     background-position: 45% 87%;
