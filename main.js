@@ -1,5 +1,5 @@
-
 document.addEventListener('DOMContentLoaded', function () {
+    // عمل "active" للروابط في النافبار
     var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
     
     navLinks.forEach(function (link) {
@@ -10,13 +10,13 @@ document.addEventListener('DOMContentLoaded', function () {
             this.classList.add('active');
         });
     });
-});
-document.addEventListener('DOMContentLoaded', function () {
-    var navLinks = document.querySelectorAll('.footer .nav-link');
+
+    // عمل "active" للروابط في الفوتر
+    var footerLinks = document.querySelectorAll('.footer .nav-link');
     
-    navLinks.forEach(function (link) {
+    footerLinks.forEach(function (link) {
         link.addEventListener('click', function () {
-            navLinks.forEach(function (link) {
+            footerLinks.forEach(function (link) {
                 link.classList.remove('active');
             });
             this.classList.add('active');

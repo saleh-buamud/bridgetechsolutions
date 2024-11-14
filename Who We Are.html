@@ -70,7 +70,7 @@ text-align: left;
     <title>BridgeTech</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg" style="background-color: rgba(25, 78, 161, 0.9);">
+    <!-- <nav class="navbar navbar-expand-lg" style="background-color: rgba(25, 78, 161, 0.9);">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="img/logo.jpg" alt="Logo" class="img-fluid"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -94,8 +94,220 @@ text-align: left;
                 </ul>
             </div>
         </div>
-    </nav>
-<div class="container-fluid">
+    </nav> -->
+<nav class="navbar navbar-expand-lg" style="background-color: rgba(25, 78, 161, 0.9);">
+    <div class="container">
+        <a class="navbar-brand" href="#"><img src="img/logo.jpg" alt="Logo" class="img-fluid"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link p-2 m-1 " style="color: white;" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link p-2 m-1 active" href="Who We Are.html" style="color: white;">Who We Are</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link p-2 m-1" href="news.html" style="color: white;">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link p-2 m-1" href="contactUs.html" style="color: white;">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<script>
+    //Javascript for Navigation effect on scroll
+    window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        header.classList.toggle('sticky', window.scrollY > 0);
+    });
+
+    //Javascript for responsive navigation sidebar Nav
+    var menu = document.querySelector('.menu');
+    var menuBtn = document.querySelector('.menu-btn');
+    var closeBtn = document.querySelector('.close-btn');
+
+    menuBtn.addEventListener("click", () => {
+        menu.classList.add('active');
+    });
+
+    closeBtn.addEventListener("click", () => {
+        menu.classList.remove('active');
+    });
+</script>
+<style>
+
+.section-main{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: url(bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 100px;
+}
+
+.section-main h1{
+  font-size: 60px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 80px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+  z-index: 999;
+  transition: 0.6s;
+}
+
+header.sticky{
+  background-color: #c50e1a;
+  padding: 15px 100px;
+}
+
+header .brand{
+  font-size: 30px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+header .menu{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .menu a{
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+  margin: 0 30px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  border-radius: 15px;
+  transition: 0.3s;
+  transition-property: color, background;
+}
+
+header .menu a:hover{
+  color: #000;
+  background: #fff;
+}
+
+header .btn{
+  font-size: 25px;
+  cursor: pointer;
+  color: #fff;
+  display: none;
+}
+
+.section-two {
+  min-height: 100vh;
+  background: #222;
+  padding: 20px 100px;
+}
+
+.section-two h2{
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 30px 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.section-two p {
+  font-size: 18px;
+  margin: 30px 0;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 1024px) {
+  header .btn{
+    display: block;
+  }
+
+  header .menu.active{
+    right: 0;
+  }
+
+  header .menu{
+    position: fixed;
+    background: #a81b24;
+    flex-direction: column;
+    min-width: 400px;
+    height: 100vh;
+    top: 0;
+    right: -100%;
+    padding: 80px 50px;
+    transition-property: right;
+    transition: 0.5s;
+  }
+
+  header .menu .close-btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 25px;
+  }
+
+  header .menu a{
+    display: block;
+    font-size: 16px;
+    margin: 20px;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 580px) {
+  .section-main h1{
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+</style>
+<script>
+  const showMenu = (toggleId, navId) => {
+        const toggle = document.getElementById(toggleId),
+            nav = document.getElementById(navId)
+
+        toggle.addEventListener('click', () => {
+            // Add show-menu class to nav menu
+            nav.classList.toggle('show-menu')
+
+            // Add show-icon to show and hide the menu icon
+            toggle.classList.toggle('show-icon')
+        })
+    }
+
+    showMenu('nav-toggle', 'nav-menu')
+</script>
+
+
+    <div class="container-fluid">
     <div class="row no-gutters">
         <div class="col-12 custom-img">
         </div>
@@ -105,7 +317,7 @@ text-align: left;
 
     <div class="container m-5">
         <img src="img/image-683x490 (1).jpg" alt="Example Image">
-        <p>Who We Are <br>
+        <p><strong style="font-weight: bold; font-size: 30px; font-family:sans-serif">Who We Are</strong> <br>
         Highly qualified and motivated professionals <br>
         Superior Service: Transportation, pharmaceutical logistics, heavy <br> construction, nuclear production, and healthcare.
         System installations <br> range from 5000 to 365,000 square feet. <br>
@@ -128,10 +340,10 @@ text-align: left;
             <div class="row">
                 <ul>
                     <li>
-                        <a class="nav-link p-2 m-1 active" style="color: white;" href="index.html">Home</a>
+                        <a class="nav-link p-2 m-1 " style="color: white;" href="index.html">Home</a>
                     </li>
                     <li>
-                        <a class="nav-link p-2  m-1" href="Who We Are.html" style="color: rgb(255, 255, 255);">Who We
+                        <a class="nav-link p-2  m-1 active" href="Who We Are.html" style="color: rgb(255, 255, 255);">Who We
                             Are</a>
                     </li>
                     <li>
