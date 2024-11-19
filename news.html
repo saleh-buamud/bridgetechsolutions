@@ -10,7 +10,7 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <style>
-        .footer {
+        /* .footer {
             background-color: #f1f1f1;
             padding: 10px;
             width: 100%;
@@ -69,36 +69,53 @@
 
         .container .sup p {
             padding: 30px 0;
-        }
+        } */
     </style>
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg" style="background-color: rgba(25, 78, 161, 0.9);">
-    <div class="container">
-        <a class="navbar-brand" href="#"><img src="img/logo.jpg" alt="Logo" class="img-fluid"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link p-2 m-1" style="color: white;" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link p-2 m-1" href="Who We Are.html" style="color: white;">Who We Are</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link p-2 m-1 active" href="news.html" style="color: white;">News</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link p-2 m-1" href="contactUs.html" style="color: white;">Contact Us</a>
-                </li>
-            </ul>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="height: 120px;" id="navbar">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand fw-bold" href="#">
+                <img src="img/logo.jpg" alt="Logo">
+            </a>
+            <!-- Toggler Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Offcanvas Navbar for Mobile -->
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title fw-bold" id="offcanvasDarkNavbarLabel">BridgeTech</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link p-2 m-1 active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-2 m-1" href="Who-We-Are.html">Who We Are</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-2 m-1" href="news.html">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-2 m-1 " href="contactUs.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
+</header>
     <div class="container-fluid">
         <div class="row no-gutters">
             <div class="col-12 custom-img">
@@ -106,7 +123,7 @@
         </div>
     </div>
     <div class="container">
-        <div class="sup">
+        <div class="sup" style="width: 900px; margin: auto;">
             <h3 class="h3-p">Partnership</h3>
             <img src="img/image-1366x275.png" alt="" class="img-fluid">
             <p>This partnership allows BTS to merge their expertise in IT consulting and Project Management with
@@ -153,7 +170,7 @@
                             <a class="nav-link p-2 m-1 " style="color: white;" href="index.html">Home</a>
                         </li>
                         <li>
-                            <a class="nav-link p-2  m-1" href="Who We Are.html" style="color: rgb(255, 255, 255);">Who We
+                            <a class="nav-link p-2  m-1" href="Who-We-Are.html" style="color: rgb(255, 255, 255);">Who We
                                 Are</a>
                         </li>
                         <li>

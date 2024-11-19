@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">        <style>
+        .custom-img {
+        width: 100%; 
+        height: 200px; 
+        opacity: 0.7;  
+        object-fit: cover; 
+        background-image: linear-gradient(rgba(56, 56, 56, 0.79), rgba(56, 56, 56, 0.79)), url('img/image (4).jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 45% 87%;
+        background-attachment: scroll;
+
+    }
+    .footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+          .container-img-text {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;         }
+         .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            text-align: center;
+        }
+
+        .container img {
+            width: 400px;
+            height: 300px;
+            margin-right: 20px;
+        }
+
+        .container p {
+            font-size: 0.9em;
+            line-height: 1.5;
+text-align: left;
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .container img {
+                width: 80%;
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+        </style>
+    <title>BridgeTech</title>
+</head>
+<body>
+
+    <!-- New Navbar Section -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="height: 120px;" id="navbar">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand fw-bold" href="#">
+                    <img src="img/logo.jpg" alt="Logo">
+                </a>
+                <!-- Toggler Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <!-- Offcanvas Navbar for Mobile -->
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title fw-bold" id="offcanvasDarkNavbarLabel">BridgeTech</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link p-2 m-1 " aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link p-2 m-1 active" href="Who-We-Are.html">Who We Are</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link p-2 m-1" href="news.html">News</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link p-2 m-1 " href="contactUs.html">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+<style>
+
+.section-main{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: url(bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 100px;
+}
+
+.section-main h1{
+  font-size: 60px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 80px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.section-two {
+  min-height: 100vh;
+  background: #222;
+  padding: 20px 100px;
+}
+
+.section-two h2{
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 30px 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.section-two p {
+  font-size: 18px;
+  margin: 30px 0;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+
+</style>
+
+
+
+    <div class="container-fluid">
+    <div class="row no-gutters">
+        <div class="col-12 custom-img">
+        </div>
+    </div>
+</div>
+ 
+
+    <div class="container m-5">
+        <img src="img/image-683x490 (1).jpg" alt="Example Image">
+        <p><strong style="font-weight: bold; font-size: 30px; font-family:sans-serif ">Who We Are</strong> <br>
+        Highly qualified and motivated professionals <br>
+        Superior Service: Transportation, pharmaceutical logistics, heavy <br> construction, nuclear production, and healthcare.
+        System installations <br> range from 5000 to 365,000 square feet. <br>
+        Technology training makes us adaptable and productive. <br>
+        We collaborate with key product line manufacturers. These <br>connections allow us to keep you updated on industry
+        developments <br> and how new applications might boost enterprise security. <br>
+        Quality products at fair prices and two-way communication develop <br> enduring relationships with our customers. We <br> value
+        customers. We value security, trust, and client goals. <br>
+        
+        We're BridgeTechSolutions.</p>
+    </div>
+
+
+<footer class="footer" style="background-color: rgba(25, 78, 161, 0.9);">
+    <div>
+        <img src="img/logo.jpg" alt="">
+    </div>
+    <div class="container">
+        <div class="container">
+            <div class="row">
+                <ul>
+                    <li>
+                        <a class="nav-link p-2 m-1 " style="color: white;" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="nav-link p-2  m-1 active" href="Who-We-Are.html" style="color: rgb(255, 255, 255);">Who We
+                            Are</a>
+                    </li>
+                    <li>
+                        <a class="nav-link p-2  m-1" href="news.html" style="color: rgb(255, 255, 255);">News</a>
+                    </li>
+                    <li>
+                        <a class="nav-link p-2  m-1" href="contactUs.html" style="color: rgb(255, 255, 255);">Contact
+                            Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div>
+        All rights reserved. Bridge Tech Solutions © 2023
+    </div>
+
+</footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+    <script src="main.js"></script></body>
+
+</html>
