@@ -10,66 +10,41 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <style>
-        /* .footer {
-            background-color: #f1f1f1;
-            padding: 10px;
-            width: 100%;
-            text-align: center;
-        }
+    
+   
+       @media (max-width: 1024px) {
+    /* تعديل عرض الصور لتناسب الشاشات الصغيرة */
+    .container img {
+        width: 100%; /* جعل الصورة تأخذ عرض الحاوية بالكامل */
+        height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
+    }
 
-        .custom-img {
-            width: 100%;
-            height: 150px;
-            opacity: 0.9;
-            object-fit: cover;
-            background-image: linear-gradient(rgba(56, 56, 56, 0.79), rgba(56, 56, 56, 0.78)), url('img/imagenews.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: 45% 50%;
-            background-attachment: scroll;
-        }
-          .h3-p{
-            margin-top:40px ;
-          }
-        @media (max-width: 768px) {
-            .h3-p h3 {
-                font-size: 1.5rem;
-            }
+    /* تغيير حجم النص داخل الفقرة */
+    .sup p {
+        font-size: 14px; /* تقليل حجم الخط على الشاشات الصغيرة */
+        width: 100%; /* عرض النص يأخذ العرض الكامل */
+        text-align: center; /* محاذاة النص في الوسط */
+        padding: 0 10px; /* إضافة مساحة حول النص لتجنب التقيد بالأطراف */
+    }
 
-            .h3-p p {
-                font-size: 0.875rem;
-            }
-        }
+    /* تعديل عنوان h3 ليكون أصغر */
+    .h3-p {
+        font-size: 20px; /* تقليل حجم النص للعناوين */
+    }
 
-        .h3-p {
-            margin-top: 10px;
-            padding: 10px 0;
-        }
+    /* تعديل عرض الحاوية لتكون أكثر توافقًا مع الشاشات الصغيرة */
+    .sup {
+        width: 100%; /* جعل عرض الحاوية 100% */
+        margin: 0 auto; /* محاذاة الحاوية في المنتصف */
+        padding: 10px; /* إضافة مسافة داخلية */
+    }
 
-        @media (max-width: 576px) {
-            .h3-p h3 {
-                font-size: 1.25rem;
-            }
-
-            .h3-p p {
-                font-size: 0.75rem;
-                line-height: 1.5;
-            }
-        }
-
-        .container .sup .img-fluid {
-            width: 1000px;
-            height: 200xpx;
-        }
-
-        .container .sup {
-            margin: auto;
-            width: 70%;
-        }
-
-        .container .sup p {
-            padding: 30px 0;
-        } */
+    /* لتقليل عرض الفقرات في الحاويات الأخرى */
+    .container > div {
+        width: 100%; /* جعل كل الحاويات تأخذ العرض بالكامل */
+        padding: 10px; /* إضافة بعض المساحة الداخلية */
+    }
+}
     </style>
 </head>
 
@@ -89,10 +64,10 @@
             </button>
 
             <!-- Offcanvas Navbar for Mobile -->
-            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
-                aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas offcanvas-end" style="     background-color: rgba(25, 78, 161, 0.9);
+            " tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title fw-bold" id="offcanvasDarkNavbarLabel">BridgeTech</h5>
+                    <h5 class="offcanvas-title fw-bold text-white" id="offcanvasDarkNavbarLabel">BridgeTech</h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
                 </div>
@@ -122,44 +97,49 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="sup" style="width: 900px; margin: auto;">
-            <h3 class="h3-p">Partnership</h3>
-            <img src="img/image-1366x275.png" alt="" class="img-fluid">
-            <p>This partnership allows BTS to merge their expertise in IT consulting and Project Management with
-                Seamless Security's
-                access control, intrusion detection systems, and CCTV technologies. The result is a comprehensive
-                security solution that
-                ensures the safety and protection of businesses and organizations. With BTS and Seamless Security
-                working together,
-                clients can rest assured that their security needs are being met with the latest and most effective
-                technologies
-                available.</p>
-        </div>
-
-       <div class="container">
-        <div style="width: 900px; margin: auto;">
-            <h3>Tech Seamless Security Services</h3>
-            <p> Seamless Security works with various technologies and brands. Some of these are Univiewt, Avigilon, Axis, Mobotix,
-            Dahua, HikVision, Digital Watchdog, Provision. for VMS solutions we deal with Axis Camera Station, ExacqVision, Dahua,
-            HikVision. We also deal with Access Control (swipe card technology) We are certified in:Kantech, KeyscanICT, Paradox. we
-            also have experience with Bosch, LenelS2, Genetec among others. For alarm systems we mainly deal with DSC NEO, DSC
-            Maxsys, DSC Powerseries (Although this has reached end of life),Paradox, Ajax.</p>
-        </div>
-
-       </div>
-        <div class="sup">
-            <img src="img/image-1366x422.png" alt="" class="img-fluid">
-        </div>
-        <div class="sup">
-            <h3 class="h3-p">Clients Seamless Security Serviced</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod condimentum felis vitae efficitur. Sed vel dictum
-            quam, at blandit leo.</p>
-            <img src="img/image-1366x283.png" alt="" class="img-fluid">
-        </div>
+<div class="container">
+    <div class="sup s" >
+        <h3 class="h3-p">Partnership</h3>
+        <img src="img/image-1366x275.png" alt="" class="img-fluid">
+        <p>This partnership allows BTS to merge their expertise in IT consulting and Project Management with
+            Seamless Security's
+            access control, intrusion detection systems, and CCTV technologies. The result is a comprehensive
+            security solution that
+            ensures the safety and protection of businesses and organizations. With BTS and Seamless Security
+            working together,
+            clients can rest assured that their security needs are being met with the latest and most effective
+            technologies
+            available.</p>
     </div>
+
+    <div class="sup" style="margin-top: 60px;" >
+        <h3 class="h3-p">Tech Seamless Security Services</h3>
+        <p> Seamless Security works with various technologies and brands. Some of these are Univiewt, Avigilon, Axis,
+            Mobotix,
+            Dahua, HikVision, Digital Watchdog, Provision. for VMS solutions we deal with Axis Camera Station,
+            ExacqVision, Dahua,
+            HikVision. We also deal with Access Control (swipe card technology) We are certified in:Kantech, KeyscanICT,
+            Paradox. we
+            also have experience with Bosch, LenelS2, Genetec among others. For alarm systems we mainly deal with DSC
+            NEO, DSC
+            Maxsys, DSC Powerseries (Although this has reached end of life),Paradox, Ajax.</p>
+    </div>
+
+    <div class="sup">
+        <img src="img/image-1366x422.png" alt="" class="img-fluid">
+    </div>
+
+    <div class="sup">
+        <h3 class="h3-p">Clients Seamless Security Serviced</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod condimentum felis vitae efficitur. Sed
+            vel dictum
+            quam, at blandit leo.</p>
+        <img src="img/image-1366x283.png" alt="" class="img-fluid">
+    </div>
+</div>
+
     <footer class="footer" style="background-color: rgba(25, 78, 161, 0.9);">
-        <div>
+        <div class="img-footer">
             <img src="img/logo.jpg" alt="">
         </div>
         <div class="container">

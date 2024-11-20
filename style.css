@@ -307,6 +307,12 @@
     width: 70%;
 }
 
-.container .sup p {
+/* .container .sup p {
     padding: 30px 0;
-}
+} */
+ 
+   .footer .img-footer {
+       text-align: center;
+       display: flex;
+       justify-content: center;
+   }
