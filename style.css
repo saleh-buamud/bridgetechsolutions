@@ -37,7 +37,6 @@
 /* Add some padding and spacing for the rest of the content */
 .navbar .nav-link.active {
     border-bottom: 2px solid white;
-    /* إضافة خط أبيض تحت الرابط */
 }
 
 .footer {
@@ -334,12 +333,10 @@
     color: #f8f9fa;
 }
 
-/* تخصيص الـ Logo */
 .navbar-brand img {
     height: 40px;
 }
 
-/* تغيير حجم النص على الشاشات الصغيرة */
 @media only screen and (max-width: 576px) {
     header h1 {
         font-size: 4rem;
@@ -348,7 +345,6 @@
 
 .navbar .nav-link.active {
     border-bottom: 2px solid white;
-    /* إضافة خط أبيض تحت الرابط */
 }
 
 .section-main {
@@ -452,71 +448,47 @@
     .container-img-text {
         display: flex;
         flex-direction: column;
-        /* ترتيب عمودي */
         align-items: center;
-        /* محاذاة العناصر في الوسط */
     }
 
     .container-img-text img {
         width: 80%;
-        /* عرض الصورة 100% */
         height: auto;
-        /* الحفاظ على نسب الصورة */
         margin-bottom: 20px;
-        /* إضافة مسافة بين الصورة والنص */
     }
 
     .container-img-text p {
         font-size: 1em;
-        /* تعديل حجم الخط ليتناسب مع الأجهزة الصغيرة */
         text-align: center;
-        /* جعل النص في الوسط */
     }
 }
 
 @media (max-width: 1024px) {
 
-    /* تعديل عرض الصور لتناسب الشاشات الصغيرة */
     .container img {
         width: 100%;
-        /* جعل الصورة تأخذ عرض الحاوية بالكامل */
         height: auto;
-        /* الحفاظ على نسبة العرض إلى الارتفاع */
     }
 
-    /* تغيير حجم النص داخل الفقرة */
     .sup p {
         font-size: 14px;
-        /* تقليل حجم الخط على الشاشات الصغيرة */
         width: 100%;
-        /* عرض النص يأخذ العرض الكامل */
         text-align: center;
-        /* محاذاة النص في الوسط */
         padding: 0 10px;
-        /* إضافة مساحة حول النص لتجنب التقيد بالأطراف */
     }
 
-    /* تعديل عنوان h3 ليكون أصغر */
     .h3-p {
         font-size: 20px;
-        /* تقليل حجم النص للعناوين */
     }
 
-    /* تعديل عرض الحاوية لتكون أكثر توافقًا مع الشاشات الصغيرة */
     .sup {
         width: 100%;
-        /* جعل عرض الحاوية 100% */
         margin: 0 auto;
-        /* محاذاة الحاوية في المنتصف */
         padding: 10px;
-        /* إضافة مسافة داخلية */
     }
 
-    /* لتقليل عرض الفقرات في الحاويات الأخرى */
     .container>div {
         width: 100%;
-        /* جعل كل الحاويات تأخذ العرض بالكامل */
         padding: 10px;
-        /* إضافة بعض المساحة الداخلية */
     }
 }
